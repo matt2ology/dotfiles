@@ -93,7 +93,7 @@ fi
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Aliases
-if [ -f ~/.shell/aliases.sh]; then
+if [ -f ~/.shell/aliases.sh ]; then
 	# True if the FILE exists and is a regular file (not a directory or device)
 	source ~/.shell/aliases.sh
 fi
