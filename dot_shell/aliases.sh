@@ -27,6 +27,7 @@ nonascii() {
 }
 
 # Go up [n] directories
+#  Example: up 4 (to go up 4 directories up from current location
 up()
 {
     local cdir="$(pwd)"
