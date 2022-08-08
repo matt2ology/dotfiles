@@ -32,8 +32,10 @@ machine_name() {
 }
 
 # Original prompt: \\u(username)@\\h(hostname)\\w(PWD):\\$(effective UID)
-# \\u@\\h\\w:\\$
-PS1="\n${COLOR_BLUE}#${COLOR_DEFAULT} ${COLOR_CYAN}\\u${COLOR_DEFAULT} ${COLOR_GREEN}at${COLOR_DEFAULT} ${COLOR_MAGENTA}\$(machine_name)${COLOR_DEFAULT} ${COLOR_GREEN}in${COLOR_DEFAULT} ${COLOR_YELLOW}\w${COLOR_DEFAULT}\n\$(if [ \$? -ne 0 ]; then echo \"${COLOR_RED}!${COLOR_DEFAULT} \"; fi)${COLOR_BLUE}>${COLOR_DEFAULT} "
+#PS1="\n${ATTRIBUTE_BOLD}${COLOR_GREEN}\\u@\\h${ATTRIBUTE_RESET}:${ATTRIBUTE_BOLD}${COLOR_BLUE}\\w${ATTRIBUTE_RESET}\\$"
+
+PS1="\n${ATTRIBUTE_BOLD}${COLOR_BLUE}#${COLOR_DEFAULT} ${ATTRIBUTE_BOLD}${COLOR_CYAN}\\u${COLOR_DEFAULT} ${ATTRIBUTE_BOLD}${COLOR_GREEN}at${COLOR_DEFAULT} ${ATTRIBUTE_BOLD}${COLOR_MAGENTA}\$(machine_name)${COLOR_DEFAULT} ${ATTRIBUTE_BOLD}${COLOR_GREEN}in${COLOR_DEFAULT} ${ATTRIBUTE_BOLD}${COLOR_YELLOW}\w${COLOR_DEFAULT}\n\$(if [ \$? -ne 0 ]; then echo \"${ATTRIBUTE_BOLD}${COLOR_RED}!${COLOR_DEFAULT} \"; fi)${COLOR_BLUE}>${COLOR_DEFAULT} "
+
 
 ############### Original prompt structure and color scheme ####################
 # set variable identifying the chroot you work in (used in the prompt below)
