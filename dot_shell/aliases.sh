@@ -16,6 +16,7 @@ alias gag='git exec ag'
 
 # chezmoi aliases - https://www.chezmoi.io/user-guide/command-overview/
 alias cz='chezmoi'
+alias czcd='chezmoi cd' # Launch a shell in the working tree
 
 # ============================================================================
 # Custom commands - A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
