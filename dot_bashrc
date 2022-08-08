@@ -82,15 +82,3 @@ if [ -f ~/.shell/aliases.sh ]; then
 	# True if the FILE exists and is a regular file (not a directory or device)
 	source ~/.shell/aliases.sh
 fi
-
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
