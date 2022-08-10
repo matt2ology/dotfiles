@@ -12,14 +12,18 @@ function path_remove() {
 
 function path_append() {
     # Does the alias only if the aliased program is installed
-    path_remove "$1"
-    PATH="${PATH:+"$PATH:"}$1"
+    if [ -d $1 ]; then
+        path_remove "$1"
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
 }
 
 function path_prepend() {
     # Does the alias only if the aliased program is installed
-    path_remove "$1"
-    PATH="$1${PATH:+":$PATH"}"
+    if [ -d $1 ]; then
+        path_remove "$1"
+        PATH="$1${PATH:+":$PATH"}"
+    fi
 }
 
 # Save current location, save here, save this location, hold my spot
