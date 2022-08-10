@@ -30,7 +30,7 @@ fi
 # Settings
 source ~/.bash/settings.bash
 
-# Bootstrap
+# Bootstrap: Adds items to the `$PATH` variable (the environment variables)
 source ~/.shell/bootstrap.sh
 
 # External settings
