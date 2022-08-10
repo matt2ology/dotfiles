@@ -37,9 +37,9 @@ source ~/.shell/bootstrap.sh
 source ~/.shell/external.sh
 
 # Aliases
+# True if the FILE exists and is a regular file (not a directory or device)
 if [ -f ~/.shell/aliases.sh ]; then
-	# True if the FILE exists and is a regular file (not a directory or device)
-	source ~/.shell/aliases.sh
+    source ~/.shell/aliases.sh
 fi
 
 # Custom prompt
