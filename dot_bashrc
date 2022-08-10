@@ -1,5 +1,6 @@
 ##############################################################################
 # Sources a bunch of files. The order is important: some depend on others
+# 1. functions.sh must always be first
 ##############################################################################
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
