@@ -15,7 +15,7 @@ esac
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Functions
+# Functions: must appear in the script before any calls to the function
 source ~/.shell/functions.sh
 
 # Allow local customizations in the ~/.shell_local_before file
