@@ -1,5 +1,5 @@
 # Save current location, save here, save this location, hold my spot
-here() {
+function here() {
     local loc
     if [ "$#" -eq 1 ]; then
         loc=$(realpath "$1")
@@ -13,6 +13,6 @@ here() {
 there="$HOME/.shell.here" # Location saved from here()
 
 # Go there saved from here()
-there() {
+function there() {
     cd "$(readlink "${there}")"
 }
