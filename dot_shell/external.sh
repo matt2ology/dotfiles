@@ -6,3 +6,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 # Python startup file
 export PYTHONSTARTUP=$HOME/.pythonrc
+
+# for common 256 color terminals (e.g. gnome-terminal)
+export TERM=xterm-256color
