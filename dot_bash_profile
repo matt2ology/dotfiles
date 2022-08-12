@@ -5,5 +5,5 @@
 source ~/.bashrc
 
 # Recommended adding evaluation of this command's output to your dotfiles (e.g. `~/.profile`,
-#:  `~/.bash_profile`, or `~/.zprofile`) with: `eval "$(brew shellenv)"`
+#  `~/.bash_profile`, or `~/.zprofile`) with: `eval "$(brew shellenv)"`
 eval "$(brew shellenv)"
