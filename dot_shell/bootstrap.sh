@@ -6,6 +6,13 @@
 path_prepend "/usr/local/bin"
 path_prepend "/usr/local/sbin"
 path_prepend "$HOME/.local/bin"
+# brew install neovim
 path_prepend "$HOME/.neovim/bin"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 path_prepend "$HOME/linuxbrew/.linuxbrew/bin"
 path_prepend "$HOME/linuxbrew/.linuxbrew/sbin"
+# Brew install chezmoi
+path_append "$HOME/linuxbrew/.linuxbrew/Cellar/chezmoi/2.20.0/bin"
+path_append "$HOME/linuxbrew/.linuxbrew/opt/chezmoi/bin"
+# Brew install chezmoi
+path_append "$HOME/linuxbrew/.linuxbrew/Homebrew/bin"
