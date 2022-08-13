@@ -37,6 +37,29 @@ set laststatus=2
 " backspace over anything.
 set backspace=indent,eol,start
 
+" ############################################################################
+" # Indentation options, change according to personal preference
+" ############################################################################
+
+" When opening a new line and no file-specific indenting is enabled,
+" keep same indent as the line you're currently on
+set autoindent
+
+" Number of visual spaces per TAB
+set tabstop=4
+
+" Number of spaces in TAB when editing
+set softtabstop=4
+
+" Number of spaces indented when reindent operations (>> and <<) are used
+set shiftwidth=4
+
+" Convert TABs to spaces
+set expandtab
+
+" Enable intelligent tabbing and spacing for indentation and alignment
+set smarttab
+
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
 " shown in any window) that has unsaved changes. This is to prevent you from "
 " forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
