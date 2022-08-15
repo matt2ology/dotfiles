@@ -3,9 +3,6 @@
 -- # https://neovim.io/doc/user/options.html
 -- ###########################################################################
 
--- A special key that will prefix the majority of your custom mappings
-vim.g.mapleader = ' '
-
 -- ###########################################################################
 -- # # PRINT THE LINE NUMBER IN FRONT OF EACH LINE
 -- # # https://neovim.io/doc/user/options.html#'number'
@@ -94,3 +91,6 @@ vim.opt.wrap = false
 -- Enable mouse support. You should avoid relying on this too much, but it can
 -- sometimes be convenient.
 vim.opt.mouse = "a"
+
+-- A special key that will prefix the majority of your custom mappings
+vim.g.mapleader = "<Space>"
