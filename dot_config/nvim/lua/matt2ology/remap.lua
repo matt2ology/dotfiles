@@ -9,5 +9,5 @@
 -- n(noremap): How the remap should be executed
 local nnoremap = require("matt2ology.keymap").nnoremap
 -- lhs, rhs
-nnoremap("<leader>pv","<cmd>Ex<CR>")
+nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
