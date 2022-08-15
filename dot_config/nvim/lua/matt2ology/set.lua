@@ -3,13 +3,23 @@
 -- # https://neovim.io/doc/user/options.html
 -- ###########################################################################
 
+-- A special key that will prefix the majority of your custom mappings
+vim.g.mapleader = ' '
+
 -- ###########################################################################
 -- # # PRINT THE LINE NUMBER IN FRONT OF EACH LINE
 -- # # https://neovim.io/doc/user/options.html#'number'
 -- ###########################################################################
+-- Show line numbers
 vim.opt.nu = true
-vim.opt.relativenumber = true
 
+-- This enables relative line numbering mode. With both number and
+-- relativenumber enabled, the current line shows the true line number, while
+-- all other lines (above and below) are numbered relative to the current line.
+-- This is useful because you can tell, at a glance, what count is needed to
+-- jump up or down to a particular line, by {count}k to go up or {count}j to go
+-- down.
+vim.opt.relativenumber = true
 
 -- ###########################################################################
 -- # # CONFIGURE CURSOR STYLE FOR EACH MODE
@@ -36,11 +46,13 @@ vim.opt.laststatus = 2
 -- by default, you can't backspace before the insertion point set with 'i'.
 -- This configuration makes backspace behave more reasonably, in that you can
 -- backspace over anything.
-vim.opt.backspace = 2 -- same as ":set backspace=indent,eol,start"
+vim.opt.backspace = "indent,eol,start" -- Same as ":set backspace=indent,eol,start"
+
+-- # # Indentation options
 
 -- When opening a new line and no file-specific indenting is enabled,
 -- keep same indent as the line you're currently on
-vim.opt.autoIndent = true -- Explicitly set on
+vim.opt.autoindent = true -- Explicitly set on
 
 -- Number of visual spaces per TAB
 vim.opt.tabstop = 4
@@ -52,7 +64,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- Convert TABs to spaces
-vim.opt.expandtab = false
+vim.opt.expandtab =  true
 
 -- By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
 -- shown in any window) that has unsaved changes. This is to prevent you from "
@@ -69,6 +81,7 @@ vim.opt.smartcase = true
 
 -- Enable intelligent tabbing and spacing for indentation and alignment
 vim.opt.incsearch = true
+vim.opt.hlsearch = false -- Highlights all search that match given pattern
 
 -- Do smart autoindenting when starting a new line. Works for C-like programs,
 -- but can also be used for other languages.
