@@ -26,7 +26,7 @@ function path_prepend() {
     fi
 }
 
-# Save current location, save here, save this location, hold my spot
+# Save current location, save here, save this location, hold my spot 
 function here() {
     local loc
     if [ "$#" -eq 1 ]; then
