@@ -2,6 +2,8 @@
 
 ## Setup
 
+[chezmoi dotfile management](https://www.jacobbolda.com/chezmoi-dotfile-management)
+
 ### Linux/MacOS/WSL - Initial Setup
 
 1. Install [Homebrew](https://brew.sh/)
